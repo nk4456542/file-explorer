@@ -9,7 +9,7 @@ export const data = [
         name: "Fender",
         isFolder: true,
         children: [
-          { id: 103, name: "Acoustic", children: [], isFolder: true },
+          { id: 103, name: "Acoustic Guitar", children: [], isFolder: true },
           {
             id: 104,
             name: "Electric Guitar",
@@ -46,6 +46,36 @@ export const data = [
       { id: 202, name: "File 4", children: null, isFolder: false },
     ],
   },
+  // {
+  //   id: 3,
+  //   name: "Folder",
+  //   isFolder: true,
+  //   children: [],
+  // },
+  // {
+  //   id: 4,
+  //   name: "Folder",
+  //   isFolder: true,
+  //   children: [],
+  // },
+  // {
+  //   id: 5,
+  //   name: "Folder",
+  //   isFolder: true,
+  //   children: [],
+  // },
+  // {
+  //   id: 6,
+  //   name: "Folder",
+  //   isFolder: true,
+  //   children: [],
+  // },
+  // {
+  //   id: 7,
+  //   name: "Folder",
+  //   isFolder: true,
+  //   children: [],
+  // },
 ];
 
 // Consider an Object of the following Schema

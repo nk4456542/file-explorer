@@ -8,6 +8,7 @@
   --black-light: #2c2d31;
   --black: #242627;
   --black-dark: #08070a;
+  --grey: #888888;
 }
 
 body {
@@ -24,4 +25,16 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
 }

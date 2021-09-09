@@ -7,16 +7,21 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <SidebarHomeLogo />
-      {data.map((item) =>
-        item.isFolder ? (
-          <SidebarItem
-            key={`${item.name}${item.id}`}
-            item={item}
-            indent={20}
-            indentStep={0}
-          />
-        ) : null
-      )}
+      <div className="sidebar-items">
+        {data.map((item) =>
+          item.isFolder ? (
+            <SidebarItem
+              key={`${item.name}${item.id}`}
+              item={item}
+              indent={15}
+              indentStep={0}
+            />
+          ) : null
+        )}
+      </div>
+      <div className="lock-btn">
+        <button>Lock</button>
+      </div>
     </div>
   );
 }
