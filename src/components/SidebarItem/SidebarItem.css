@@ -1,6 +1,5 @@
 .sidebar-item {
   border-left: 1px solid white;
-  font-size: 0.8rem;
 }
 .sidebar-item-style {
   background-color: var(--black);
@@ -12,6 +11,7 @@
   justify-content: flex-start;
   border-radius: 10px;
   margin-top: 10px;
+  font-size: 0.8rem;
 }
 
 .sidebar-item-style img {

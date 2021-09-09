@@ -1,8 +1,10 @@
-.show-files {
+.main {
   color: white;
   width: 75%;
+  padding: 1rem;
 }
 
 .topbar-flex {
   display: flex;
+  align-items: center;
 }

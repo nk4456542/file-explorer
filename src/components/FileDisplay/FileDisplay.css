@@ -1,0 +1,12 @@
+.file-display {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.file-display img {
+  width: 100%;
+}

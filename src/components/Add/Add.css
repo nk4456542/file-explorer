@@ -1,0 +1,11 @@
+.add-button {
+  margin: 1rem;
+  background-color: #fbb131;
+  border-radius: 50%;
+}
+
+.add-button button {
+  font-size: 1.5rem;
+  opacity: 0.5;
+  color: black;
+}
