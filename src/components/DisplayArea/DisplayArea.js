@@ -9,7 +9,7 @@ function DisplayArea() {
     return folder.id === Number(folderId);
   });
   const currentFiles = currentFolder.children;
-  console.log(currentFiles);
+  // console.log(currentFiles);
   return (
     <div className="display-area">
       {currentFiles.length > 0 ? (

@@ -7,21 +7,28 @@ import { Switch, Route } from "react-router-dom";
 
 function Main() {
   return (
-    <div className="main">
-      <div className="topbar-flex">
-        <Breadcrumb />
-        <Searchbar />
-        <Add />
-      </div>
-      <Switch>
-        <Route exact path="/">
+    <Switch>
+      <Route exact path="/">
+        <div className="main">
+          <div className="topbar-flex">
+            <Breadcrumb />
+            <Searchbar />
+            <Add />
+          </div>
           <h1>No Folder Selected</h1>
-        </Route>
-        <Route exact path="/folder/:folderId">
+        </div>
+      </Route>
+      <Route exact path="/folder/:folderId">
+        <div className="main">
+          <div className="topbar-flex">
+            <Breadcrumb />
+            <Searchbar />
+            <Add />
+          </div>
           <DisplayArea />
-        </Route>
-      </Switch>
-    </div>
+        </div>
+      </Route>
+    </Switch>
   );
 }
 
