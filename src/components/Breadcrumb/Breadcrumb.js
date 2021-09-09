@@ -1,7 +1,6 @@
 import "./Breadcrumb.css";
-
 function Breadcrumb() {
-  return <div className="breadcrumb">Breadcrumb</div>;
+  return <div className="breadcrumb">{window.location.pathname}</div>;
 }
 
 export default Breadcrumb;

@@ -1,5 +1,6 @@
 .add-button {
   margin: 1rem;
+  position: relative;
   background-color: #fbb131;
   border-radius: 50%;
 }
@@ -8,4 +9,18 @@
   font-size: 1.5rem;
   opacity: 0.5;
   color: black;
+}
+
+.create-files {
+  width: 100px;
+  position: absolute;
+  top: 25;
+  left: 0;
+  background-color: var(--black-light);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.create-btn {
+  cursor: pointer;
 }
