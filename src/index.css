@@ -20,3 +20,8 @@ body {
   font-size: 1rem;
   background-color: var(--black);
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

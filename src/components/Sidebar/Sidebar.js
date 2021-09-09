@@ -1,21 +1,22 @@
 import "./Sidebar.css";
 import { data } from "../../data/data";
 import SidebarItem from "../SidebarItem";
+import SidebarHomeLogo from "../SidebarHomeLogo";
 
 function Sidebar() {
   return (
     <div className="sidebar">
-      {data.map((item) => {
-        console.log(item);
-        return (
+      <SidebarHomeLogo />
+      {data.map((item) =>
+        item.isFolder ? (
           <SidebarItem
             key={`${item.name}${item.id}`}
             item={item}
-            indent={10}
+            indent={20}
             indentStep={0}
           />
-        );
-      })}
+        ) : null
+      )}
     </div>
   );
 }

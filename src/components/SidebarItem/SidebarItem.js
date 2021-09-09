@@ -1,24 +1,36 @@
-import { Link } from "react-router-dom";
 import "./SidebarItem.css";
+import folderIcon from "../../assets/folder-open.png";
 
 function SidebarItem(props) {
   const { item, indent, indentStep } = props;
   const { name, children } = item;
-  console.log(item);
+  //   console.log(item);
+  let classesList = "sidebar-item-style";
+  let divClass = "";
+  if (indentStep > 0) {
+    divClass = "sidebar-indent-style";
+  }
   return (
-    <div style={{ padding: `${indent * indentStep}px` }}>
-      <p>{name}</p>
-      {Array.isArray(children) &&
-        children.map((child) => {
-          return (
-            <SidebarItem
-              key={`${child.name}${child.id}`}
-              item={child}
-              indent={indent}
-              indentStep={indentStep + 1}
-            />
-          );
-        })}
+    <div
+      style={{ paddingLeft: `${indent * indentStep}px` }}
+      className={divClass}
+    >
+      <div className={classesList}>
+        <img src={folderIcon} alt="folder icon" />
+        <p>{name}</p>
+      </div>
+      {Array.isArray(children)
+        ? children.map((child) =>
+            child.isFolder ? (
+              <SidebarItem
+                key={child.id}
+                item={child}
+                indent={indent}
+                indentStep={indentStep + 1}
+              />
+            ) : null
+          )
+        : null}
     </div>
   );
 }

@@ -1,0 +1,25 @@
+.sidebar-item {
+  border-left: 1px solid white;
+  font-size: 0.8rem;
+}
+.sidebar-item-style {
+  background-color: var(--black);
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.sidebar-item-style img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.sidebar-indent-style {
+  border-left: 1px solid rgb(200, 198, 198);
+  margin-left: 5px;
+}
